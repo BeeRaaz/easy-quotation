@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function DMtable({pricingTitle="Digital Marketing Pricing"}) {
-  //state to store input data, table row, and price
+     //state to store input data, table row, and price
   const [data, setData] = useState({sn:"", service:"", pricing:"",})
   const [tableRow, setTableRow] = useState([])
   const [tableFoot, setTableFoot] = useState(false)
@@ -82,3 +82,5 @@ function DMtable({pricingTitle="Digital Marketing Pricing"}) {
 }
 
 export default DMtable
+
+

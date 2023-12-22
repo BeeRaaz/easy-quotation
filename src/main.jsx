@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import DMtable from './components/DMTable.jsx'
+
 import SEOtable from './components/SEOtable.jsx'
 import WEBtable from './components/WEBtable.jsx'
+import DMtable from './components/DigitalMarketingTable.jsx'
 
 const router = createBrowserRouter([{
   path:"/",

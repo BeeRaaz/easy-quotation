@@ -1,5 +1,5 @@
 import React from 'react'
-import DMtable from './DMTable'
+import DMtable from './DigitalMarketingTable'
 
 function SEOtable() {
   return (
