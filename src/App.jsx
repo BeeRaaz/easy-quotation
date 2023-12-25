@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import Navbar from './components/Navbar'
+import Header from "./components/Header"
 import { Outlet } from 'react-router-dom'
+import Services from './components/Services'
 // import 
 
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
+      <Services />
       <Outlet />
     </>
   )
