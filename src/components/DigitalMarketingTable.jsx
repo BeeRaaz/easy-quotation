@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function DMtable({pricingTitle="Digital Marketing Pricing"}) {
+function DMtable({pricingTitle="Digital Marketing"}) {
      //state to store input data, table row, and price
   const [data, setData] = useState({sn:"", service:"", pricing:"",})
   const [tableRow, setTableRow] = useState([])
@@ -33,7 +33,30 @@ function DMtable({pricingTitle="Digital Marketing Pricing"}) {
     <>
 
     {/* taking user input */}
-    <div id="formContainer" className=" flex justify-center w-full text-xl mb-10">
+    <div className="border-t-2 border-t-[#F5CB47]">
+      <h3 className="text-3xl mb-3 text-[#F5CB47] pb-10">{pricingTitle.toUpperCase()} PROPOSAL</h3>
+      <p className="text-xl pt-3 pb-5">
+        Digital marketing, or online marketing is a form of marketing that leverages the internet and digital technologies, such as computers and smartphones, to connect with the customers.
+      </p> 
+      <p className="text-xl pt-3 pb-3">
+        Digital marketing includes:
+      </p> 
+      <ol type="1" className="text-xl pb-14">
+          <li className="pt-2">Email Marketing</li>
+          <li className="pt-2">Social Media Marketing</li>
+          <li className="pt-2">Advertising in different digital media </li>
+          <li className="pt-2">Multimedia Messages</li>
+        </ol>      
+      </div>
+
+      <div className="border-t-2 border-t-[#F5CB47]">
+        <h3 className="text-3xl mb-3 text-[#F5CB47] pb-10">{pricingTitle.toUpperCase()} PACKAGE</h3>
+      </div>
+
+      <div>
+        <h2 className="text-xl mb-3">As we know, social media marketing is a continuous process so it should be carried every month to reach the potential customers.</h2>
+      </div>
+    <div id="formContainer" className=" flex justify-start w-full text-xl mb-10">
       <form
       onSubmit={handleFormSubmit} 
       className="flex items-center gap-10">
@@ -47,8 +70,8 @@ function DMtable({pricingTitle="Digital Marketing Pricing"}) {
     </div>
 
     {/* table to show the input data */}
-    <div id="quotationContainer" className=" w-2/4 m-auto bg-white p-10 relative max-h-full">
-      <h1 className="text-center text-4xl text-gray-700 mb-8 w-full h-fit" contentEditable={false}>{pricingTitle.toUpperCase()}</h1>
+    <div id="quotationContainer" className="w-4/5 bg-white p-10 relative max-h-full">
+      <h1 className="text-center text-4xl text-gray-700 mb-8 w-full h-fit">{pricingTitle.toUpperCase()} PRICING</h1>
       <table id="quotationTable" className="w-full border-2">
         <thead className=" h-14">
           <tr>

@@ -4,7 +4,7 @@ import DMtable from './DigitalMarketingTable'
 function SEOtable() {
   return (
     <>
-    <DMtable pricingTitle="SEO Pricing" />
+    <DMtable pricingTitle="SEARCH ENGINE OPTIMIZATION (SEO)" />
     </>
   )
 }
