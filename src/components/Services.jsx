@@ -2,6 +2,7 @@ import React from 'react'
 import DMtable from './DigitalMarketingTable'
 import SEOtable from './SEOtable'
 import WEBtable from './WEBtable'
+import Clients from './Clients'
 
 function Services() {
   return (
@@ -22,43 +23,47 @@ function Services() {
       <section id="overview" className="h-screen">
         <div>
           <h3 className="text-3xl mb-3 text-[#2C2A73]">REALM INFOTECH SERVICE PACKAGES</h3>
-          <p className="text-xl pb-14 bt-5">REALM INFOTECH PROVIDES YOU THE BEST DIGITAL MARKETING SERVICES IN NEPAL. GROW YOUR BUSINESS WITH US AT THE BEST PRICE!</p>
+          <p className="text-xl pb-10 bt-5">REALM INFOTECH PROVIDES YOU THE BEST DIGITAL MARKETING SERVICES IN NEPAL. GROW YOUR BUSINESS WITH US AT THE BEST PRICE!</p>
         </div>
         <div className="border-t-2 border-t-[#F5CB47]">
           <h3 className="text-3xl mb-3 text-[#F5CB47]">OVERVIEW</h3>
           <p className="text-xl pt-10 pb-3">
             Describe your objective. With the advancements in technology and changing trend of searching and occurrence of new sources of marketing; like personalized web content, utility driven website, dedicated social media channel, companies need to switch from traditional marketing source to modern source that can deliver value of the company to the right people.
           </p>
-          <p className="text-xl pt-3 pb-14">
+          <p className="text-xl pt-3 pb-10">
             Digital media can encourage people to learn about the company, it helps to communicate in a social way. And the best part is people always love to engage socially. With proper content strategy, right targeting, shouting at the right occasion, digital media can create huge impact in attracting, maintaining and retaining customer for growth sellers and at the same time it continuously keeps on building social relation with public at large unlike traditional media.
           </p>
         </div>
         <div className="border-t-2 border-t-[#F5CB47]">
           <h3 className="text-3xl mb-3 text-[#F5CB47] pb-10">SERVICES</h3>
           <h2 className="text-2xl mb-3 text-[#2C2A73]">THESE ARE SOME OF THE SERVICES THAT WE PROVIDE AT REALM INFOTECH.</h2>
-          <table className="text-center border-2 border-[#F5CB47] w-3/5 h-40">
+          <table className="text-center border-2 border-[#F5CB47] w-4/5 h-40">
             <thead className="border-2 border-[#F5CB47]">
               <tr>
-                <th className="border-2 border-[#F5CB47] py-5 w-1/4">S.N.</th>
-                <th className="border-2 border-[#F5CB47] py-3 text-left pl-3">SERVICE</th>
+                <th className="border-2 border-[#F5CB47] py-3 w-1/4">S.N.</th>
+                <th className="border-2 border-[#F5CB47] py-2 text-left pl-3">SERVICE</th>
               </tr>
             </thead>
             <tbody className="border-2 border-[#F5CB47] text-lg">
               <tr>
-                <td className="border-2 border-[#F5CB47] py-5 w-1/4">1</td>
-                <td className="border-2 border-[#F5CB47] py-3 text-left pl-3">DIGITAL MARKETING</td>
+                <td className="border-2 border-[#F5CB47] py-3 w-1/4">1</td>
+                <td className="border-2 border-[#F5CB47] py-2 text-left pl-3">DIGITAL MARKETING</td>
               </tr>
               <tr>
-                <td className="border-2 border-[#F5CB47] py-5 w-1/4">2</td>
-                <td className="border-2 border-[#F5CB47] py-3 text-left pl-3">SEARCH ENGINE OPTIMIZATIONS (SEO)</td>
+                <td className="border-2 border-[#F5CB47] py-3 w-1/4">2</td>
+                <td className="border-2 border-[#F5CB47] py-2 text-left pl-3">SEARCH ENGINE OPTIMIZATIONS (SEO)</td>
               </tr>
               <tr>
-                <td className="border-2 border-[#F5CB47] py-5 w-1/4">3</td>
-                <td className="border-2 border-[#F5CB47] py-3 text-left pl-3">WEBSITE DEVELOPMENT</td>
+                <td className="border-2 border-[#F5CB47] py-3 w-1/4">3</td>
+                <td className="border-2 border-[#F5CB47] py-2 text-left pl-3">WEBSITE DEVELOPMENT</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section id="ourClients">
+        <Clients />
       </section>
 
       <section id="digitalMarketing" className="h-screen">

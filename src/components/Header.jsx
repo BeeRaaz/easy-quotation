@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import PackageDescription from './PackageDescription'
 
 function Navbar() {
 
   const [isNavMenuVisible, setNavMenuVisible] = useState(false)
 
     const Print = () => {
-        let printableDiv = document.querySelector("#services").innerHTML
-        let originalContent = document.body.innerHTML
-        document.body.innerHTML = printableDiv
-        window.print()
-        document.body.innerHTML = originalContent
-      }
+      let nonPrintableDiv = document.querySelector("#formContainer")
+      nonPrintableDiv.classList.toggle("hidden")
+      let originalContent = document.body.innerHTML
+      let printableDiv = document.querySelector("#services").innerHTML
+      document.body.innerHTML = printableDiv
+      window.print()
+      document.body.innerHTML = originalContent
+    }
 
     const showNavMenu = () => {
       setNavMenuVisible(!isNavMenuVisible)
