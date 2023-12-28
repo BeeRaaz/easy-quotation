@@ -6,15 +6,15 @@ function Navbar() {
 
   const [isNavMenuVisible, setNavMenuVisible] = useState(false)
 
-    const Print = () => {
-      let nonPrintableDiv = document.querySelector("#formContainer")
-      nonPrintableDiv.classList.toggle("hidden")
-      let originalContent = document.body.innerHTML
-      let printableDiv = document.querySelector("#services").innerHTML
-      document.body.innerHTML = printableDiv
-      window.print()
-      document.body.innerHTML = originalContent
-    }
+  const Print = () => {
+    // let nonPrintableDiv = document.querySelectorAll("#formContainer")
+    // nonPrintableDiv.classList.toggle("hidden")
+    let originalContent = document.body.innerHTML
+    let printableDiv = document.querySelector("#services").innerHTML
+    document.body.innerHTML = printableDiv
+    window.print()
+    document.body.innerHTML = originalContent
+  }
 
     const showNavMenu = () => {
       setNavMenuVisible(!isNavMenuVisible)
