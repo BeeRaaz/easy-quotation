@@ -3,7 +3,7 @@ import React from 'react'
 function PackageDescription({pricingTitle, description, li1, li2, li3, tableNote}) {
   return (
     <>
-    <div className="border-t-2 border-t-[#F5CB47]">
+    <div className="border-t-2 border-t-[#F5CB47] mt-10 w-[970px] mx-auto">
         <h3 className="text-3xl mb-3 text-[#F5CB47] pb-10">{pricingTitle.toUpperCase()} PROPOSAL</h3>
         <p className="text-xl pt-3 pb-5">
             {description}   
@@ -18,11 +18,11 @@ function PackageDescription({pricingTitle, description, li1, li2, li3, tableNote
         </ol>      
     </div>
 
-    <div className="border-t-2 border-t-[#F5CB47]">
+    <div className="border-t-2 border-t-[#F5CB47] w-[970px] mx-auto">
         <h3 className="text-3xl mb-3 text-[#F5CB47] pb-10">{pricingTitle.toUpperCase()} PACKAGE</h3>
     </div>
 
-    <div>
+    <div className="w-[970px] mx-auto">
         <h2 className="text-xl mb-2">{tableNote}</h2>
     </div>
     </>

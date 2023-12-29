@@ -14,9 +14,21 @@ const router = createBrowserRouter([{
   element: <App />,
   children: [
     {
-    path: "/services",
-    element: <Services />
-    }
+    path: "/digital-marketing-package",
+    element: <DMtable />
+    },
+    {
+      path: "/seo-package",
+      element: <SEOtable />
+    },
+    {
+      path: "/website-development-package",
+      element: <WEBtable />
+    },
+    {
+      path: "/all-packages",
+      element: <Services />
+    },
   ]
 }])
 

@@ -6,13 +6,13 @@ import Clients from './Clients'
 
 function Services() {
   return (
-    <main id="services" className="relative -z-10 pt-36 h-screen w-2/4 mx-auto">
+    <main id="services" className="relative h-screen w-2/4 mx-auto">
       <section id="intro" className="min-h-screen">
         <div id="imageSection">
           <img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-74n w-96 mx-auto items-center"/>
           <h2 className="text-5xl text-[#F5CB47] my-20 text-center">REALM INFOTECH <br /> SERVICE PACKAGES</h2>
         </div>
-        <div id="locationInfo" className="absolute right-32 bottom-14 text-right">
+        <div id="locationInfo" className="absolute right-32 bottom-40 text-right">
           <h3 className="text-2xl"><span className="text-[#2C2A73] font-semibold">Presented By:</span> Realm Infotech</h3>
           <h3 className="text-2xl">1st Floor, Siddhartha Bank</h3>
           <h3 className="text-2xl">Patan Dhoka, Lalitpur, Kathmandu</h3>

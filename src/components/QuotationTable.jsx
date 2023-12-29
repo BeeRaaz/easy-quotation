@@ -34,7 +34,7 @@ function QuotationTable({pricingTitle}) {
   return (
     <>
        {/* taking user input */}
-    <div id="formContainer" className="formContainer flex justify-start items-center w-full text-xl mb-5">
+    <div id="formContainer" className="formContainer flex justify-start items-center w-[970px] mx-auto text-xl mb-5">
       <form
       onSubmit={handleFormSubmit} 
       className="flex items-center gap-10">
@@ -48,7 +48,7 @@ function QuotationTable({pricingTitle}) {
     </div>
 
     {/* table to show the input data */}
-    <div id="quotationContainer" className="w-4/5 bg-white py-10 px-4 relative">
+    <div id="quotationContainer" className=" bg-white py-10 px-4 relative w-[970px] mx-auto">
       <h1 className="text-center text-3xl text-[#2C2A73] mb-4 w-full h-fit">{pricingTitle.toUpperCase()} PRICING</h1>
       <table id="quotationTable" className="w-[100%] border-2 border-[#F5CB47]">
         <thead className=" h-12">

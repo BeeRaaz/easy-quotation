@@ -53,7 +53,7 @@ function Navbar() {
     //     </div>
     // </nav>
   <>
-    <header id="header" className="text-2xl w-full flex flex-wrap justify-between items-center py-4 px-32 h-32 absolute">
+    {/* <header id="header" className="text-2xl w-full flex flex-wrap justify-between items-center py-4 px-32 h-32 absolute">
       <div id="headerLeft"><img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-24 w-32"/></div>
       <div  id="headerRight" className="flex flex-wrap justify-center items-center gap-10 ">
       {isNavMenuVisible ? null : <div id="headerMiddle">
@@ -69,7 +69,38 @@ function Navbar() {
       className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
         <h2 className="text-6xl absolute right-32 bottom-20 ">SERVICES</h2>
       </NavLink>
-    </nav> : null}
+    </nav> : null} */}
+
+    <header className="text-2xl w-full flex flex-wrap justify-between items-center py-4 px-32 h-32 border-b-2 border-[#2C2A73]">
+      <div id="headerLeft"><img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-24 w-32"/></div>
+      <div id="headerMiddle">
+        <nav className="text-2xl flex items-center gap-10">
+          <NavLink 
+          to={"/digital-marketing-package"}
+          className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
+          <h3>Digital Marketing</h3>
+          </NavLink>
+          <NavLink 
+          to={"/seo-package"}
+          className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
+          <h3>SEO</h3>
+          </NavLink>
+          <NavLink 
+          to={"/website-development-package"}
+          className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
+          <h3>Website Development</h3>
+          </NavLink>
+          <NavLink 
+          to={"/all-packages"}
+          className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
+          <h3>All Packages</h3>
+          </NavLink>
+        </nav>
+      </div>
+      <div id="headerRight">
+        <button className="w-auto px-4 py-2 border-2 border-[#2C2A73]" onClick={check}><img width="30" height="30" src="https://img.icons8.com/ios/50/print--v1.png" alt="print--v1"/></button>
+      </div>
+    </header>
     
   </>
   )
