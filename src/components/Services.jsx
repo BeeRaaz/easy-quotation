@@ -7,7 +7,7 @@ import Clients from './Clients'
 function Services() {
   return (
     <main id="services" className="relative -z-10 pt-36 h-screen w-2/4 mx-auto">
-      <section id="intro" className="h-screen">
+      <section id="intro" className="min-h-screen">
         <div id="imageSection">
           <img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-74n w-96 mx-auto items-center"/>
           <h2 className="text-5xl text-[#F5CB47] my-20 text-center">REALM INFOTECH <br /> SERVICE PACKAGES</h2>
@@ -20,7 +20,7 @@ function Services() {
         </div>
       </section> 
 
-      <section id="overview" className="h-screen">
+      <section id="overview" className="min-h-screen">
         <div>
           <h3 className="text-4xl mb-3 text-[#2C2A73]">REALM INFOTECH SERVICE PACKAGES</h3>
           <p className="text-xl pb-10 bt-5">REALM INFOTECH PROVIDES YOU THE BEST DIGITAL MARKETING SERVICES IN NEPAL. GROW YOUR BUSINESS WITH US AT THE BEST PRICE!</p>
@@ -62,19 +62,19 @@ function Services() {
         </div>
       </section>
 
-      <section id="ourClients" className="h-screen">
+      <section id="ourClients" className="min-h-screen">
         <Clients />
       </section>
 
-      <section id="digitalMarketing" className="h-screen">
+      <section id="digitalMarketing" className="min-h-screen">
         <DMtable />
       </section>
 
-      <section id="seo" className="h-screen">
+      <section id="seo" className="min-h-screen">
         <SEOtable />
       </section>
 
-      <section id="websiteDevelopment" className="h-screen">
+      <section id="websiteDevelopment" className="min-h-screen">
         <WEBtable />
       </section>
     </main>

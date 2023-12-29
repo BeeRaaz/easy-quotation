@@ -1,20 +1,38 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import PackageDescription from './PackageDescription'
+import QuotationTable from './QuotationTable'
 
 function Navbar() {
 
   const [isNavMenuVisible, setNavMenuVisible] = useState(false)
 
+  const check = () => {
+    for (let i = 0; i < 3; i++) {
+      let services = document.querySelector("#services")
+    if (services.contains(document.getElementById("formContainer"))) {
+      document.getElementById("formContainer").remove()
+      
+    }
+    }
+    Print() 
+    
+    
+  }
+
   const Print = () => {
-    // let nonPrintableDiv = document.querySelectorAll("#formContainer")
-    // nonPrintableDiv.classList.toggle("hidden")
+    // let seoQuotationTable = document.querySelector("#seoQuotationTable")
+    // seoQuotationTable.classList.toggle("hidden")
+    
     let originalContent = document.body.innerHTML
     let printableDiv = document.querySelector("#services").innerHTML
     document.body.innerHTML = printableDiv
     window.print()
     document.body.innerHTML = originalContent
+
   }
+
+  
 
     const showNavMenu = () => {
       setNavMenuVisible(!isNavMenuVisible)
@@ -39,7 +57,7 @@ function Navbar() {
       <div id="headerLeft"><img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-24 w-32"/></div>
       <div  id="headerRight" className="flex flex-wrap justify-center items-center gap-10 ">
       {isNavMenuVisible ? null : <div id="headerMiddle">
-        <button className="w-auto px-4 py-2 border-2 border-zinc-500" onClick={Print}><img width="30" height="30" src="https://img.icons8.com/ios/50/print--v1.png" alt="print--v1"/></button>
+        <button className="w-auto px-4 py-2 border-2 border-zinc-500" onClick={check}><img width="30" height="30" src="https://img.icons8.com/ios/50/print--v1.png" alt="print--v1"/></button>
         </div> }
         {isNavMenuVisible ? <img width="60" height="60" src="https://img.icons8.com/ios/50/multiply.png" alt="multiply" className="cursor-pointer" onClick={showNavMenu}/> : <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6" className="cursor-pointer" onClick={showNavMenu}/>}
       </div>
@@ -48,7 +66,7 @@ function Navbar() {
     {isNavMenuVisible ? <nav className="relative h-screen -z-10 ">
       <NavLink 
       to={"/services"}
-      className={({isActive}) => `font-semibold ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
+      className={({isActive}) => `font-semibold cursor-pointer ${isActive ? "text-[#F5CB47]" : "text-[#2C2A73]" }`}>
         <h2 className="text-6xl absolute right-32 bottom-20 ">SERVICES</h2>
       </NavLink>
     </nav> : null}

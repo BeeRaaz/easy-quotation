@@ -11,7 +11,6 @@ function App() {
     <>
       <Header />
       <Services />
-      <Outlet />
     </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Clients() {
   return (
-    <article className="pb-20">
+    <article className="pb-14">
       <div className="border-t-2 border-t-[#F5CB47] pb-20">
         <h3 className="text-3xl mb-3 text-[#F5CB47]">OUR CLIENTS</h3>
       </div>

@@ -7,23 +7,16 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import SEOtable from './components/SEOtable.jsx'
 import WEBtable from './components/WEBtable.jsx'
 import DMtable from './components/DigitalMarketingTable.jsx'
+import Services from './components/Services.jsx'
 
 const router = createBrowserRouter([{
   path:"/",
   element: <App />,
   children: [
     {
-    path: "/digital-marketing-pricing",
-    element: <DMtable />
-    }, 
-    {
-      path: "/seo-pricing",
-      element: <SEOtable />
-    }, 
-    {
-      path: "/website-development-pricing",
-      element: <WEBtable />
-    } 
+    path: "/services",
+    element: <Services />
+    }
   ]
 }])
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 function QuotationTable({pricingTitle}) {
       //state to store input data, table row, and price
@@ -7,6 +7,8 @@ function QuotationTable({pricingTitle}) {
   const [tableFoot, setTableFoot] = useState(false)
   const [price, setPrice] = useState([])
   const [totalPrice, setTotalPrice] = useState(0)
+
+  
   
   // console.log(price);
 
@@ -28,10 +30,11 @@ function QuotationTable({pricingTitle}) {
     setTableFoot(true)
 
   }
+
   return (
     <>
        {/* taking user input */}
-    <div id="formContainer" className=" flex justify-start w-full text-xl mb-5">
+    <div id="formContainer" className="formContainer flex justify-start items-center w-full text-xl mb-5">
       <form
       onSubmit={handleFormSubmit} 
       className="flex items-center gap-10">
@@ -40,7 +43,7 @@ function QuotationTable({pricingTitle}) {
         <label>Pricing: <input type="text" name="pricing" value={data.pricing} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
         <button 
         type="submit" 
-        className="w-auto px-2 py-3 border-2 text-xl rounded-xl text-white bg-cyan-500 border-cyan-500 hover:bg-inherit hover:text-cyan-500 hover:border-gray-400 font-semibold outline-none" >Add Row</button>
+        className="w-auto px-2 border-2 text-lg rounded-xl text-white bg-cyan-500 border-cyan-500 hover:bg-inherit hover:text-cyan-500 hover:border-gray-400 font-semibold outline-none mt-5" >Add Row</button>
       </form>
     </div>
 
