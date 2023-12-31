@@ -34,21 +34,21 @@ function QuotationTable({pricingTitle}) {
   return (
     <>
        {/* taking user input */}
-    <div id="formContainer" className="formContainer flex justify-start items-center w-[970px] mx-auto text-xl mb-5">
+    <div id="formContainer" className="w-full text-xl mb-5 text-left">
       <form
       onSubmit={handleFormSubmit} 
-      className="flex items-center gap-10">
-        <label>S.N: <input type="text" name="sn" value={data.sn} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
-        <label>Service: <input type="text" name="service" value={data.service} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
-        <label>Pricing: <input type="text" name="pricing" value={data.pricing} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
+      className="w-full flex flex-col justify-start gap-10 sm:items-center 2xl:flex-row">
+        <label>S.N: <br /><input type="text" name="sn" value={data.sn} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
+        <label>Service: <br /><input type="text" name="service" value={data.service} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
+        <label>Pricing: <br /><input type="text" name="pricing" value={data.pricing} onChange={handleInputChange} className="px-1 py-3 rounded-xl bg-white"/></label>
         <button 
         type="submit" 
-        className="w-auto px-2 border-2 text-lg rounded-xl text-white bg-cyan-500 border-cyan-500 hover:bg-inherit hover:text-cyan-500 hover:border-gray-400 font-semibold outline-none mt-5" >Add Row</button>
+        className="w-fit px-2 py-4 border-2 text-lg rounded-xl text-white bg-cyan-500 border-cyan-500 hover:bg-inherit hover:text-cyan-500 hover:border-gray-400 font-semibold outline-none mt-5" >Add Row</button>
       </form>
     </div>
 
     {/* table to show the input data */}
-    <div id="quotationContainer" className=" bg-white py-10 px-4 relative w-[970px] mx-auto">
+    <div id="quotationContainer" className=" bg-white py-10 px-4 relative w-full mx-auto">
       <h1 className="text-center text-3xl text-[#2C2A73] mb-4 w-full h-fit">{pricingTitle.toUpperCase()} PRICING</h1>
       <table id="quotationTable" className="w-[100%] border-2 border-[#F5CB47]">
         <thead className=" h-12">

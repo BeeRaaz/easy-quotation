@@ -10,9 +10,17 @@ function Navbar() {
   const check = () => {
     for (let i = 0; i < 3; i++) {
       let services = document.querySelector("#services")
+      let DMbutton = document.querySelector("#digitalMarketingPackageButton")
+      let SEObutton = document.querySelector("#SEOPackageButton")
+      let WDbutton = document.querySelector("#websiteDevelopmentPackageButton")
+
     if (services.contains(document.getElementById("formContainer"))) {
       document.getElementById("formContainer").remove()
-      
+    }
+    else if (services.contains(DMbutton) && services.contains(SEObutton) && services.contains(WDbutton)) {
+      DMbutton.style.display = "none"
+      SEObutton.style.display = "none"
+      WDbutton.style.display = "none"
     }
     }
     Print() 
@@ -71,9 +79,9 @@ function Navbar() {
       </NavLink>
     </nav> : null} */}
 
-    <header className="text-2xl w-full flex flex-wrap justify-between items-center py-4 px-32 h-32 border-b-2 border-[#2C2A73]">
+    <header className="text-2xl w-full flex flex-wrap justify-between items-center py-4 px-5 h-32 border-b-2 border-[#2C2A73] sm:px-10 md:px-14 lg:px-20 xl:px-24 2xl:px-28">
       <div id="headerLeft"><img src="https://realminfotek.com/wp-content/uploads/2018/11/logo.png" alt="Realm-Logo" className="h-24 w-32"/></div>
-      <div id="headerMiddle">
+      {/* <div id="headerMiddle">
         <nav className="text-2xl flex items-center gap-10">
           <NavLink 
           to={"/digital-marketing-package"}
@@ -96,7 +104,7 @@ function Navbar() {
           <h3>All Packages</h3>
           </NavLink>
         </nav>
-      </div>
+      </div> */}
       <div id="headerRight">
         <button className="w-auto px-4 py-2 border-2 border-[#2C2A73]" onClick={check}><img width="30" height="30" src="https://img.icons8.com/ios/50/print--v1.png" alt="print--v1"/></button>
       </div>

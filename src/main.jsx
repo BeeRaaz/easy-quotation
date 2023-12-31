@@ -12,24 +12,24 @@ import Services from './components/Services.jsx'
 const router = createBrowserRouter([{
   path:"/",
   element: <App />,
-  children: [
-    {
-    path: "/digital-marketing-package",
-    element: <DMtable />
-    },
-    {
-      path: "/seo-package",
-      element: <SEOtable />
-    },
-    {
-      path: "/website-development-package",
-      element: <WEBtable />
-    },
-    {
-      path: "/all-packages",
-      element: <Services />
-    },
-  ]
+  // children: [
+  //   {
+  //   path: "/digital-marketing-package",
+  //   element: <DMtable />
+  //   },
+  //   {
+  //     path: "/seo-package",
+  //     element: <SEOtable />
+  //   },
+  //   {
+  //     path: "/website-development-package",
+  //     element: <WEBtable />
+  //   },
+  //   {
+  //     path: "/all-packages",
+  //     element: <Services />
+  //   },
+  // ]
 }])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
